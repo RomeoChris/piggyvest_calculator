@@ -1,0 +1,174 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piggyvest Calculator</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/responsive-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans"
+      rel="stylesheet"
+    />
+  </head> 
+  <body>
+    <main>
+      <div class="header-wrapper">
+        <div class="inner-header-wrapper">
+          <nav class="nav-bar">
+            <div class="logo">
+              <img src="/static/img/logo.png" alt="" />
+            </div>
+            <ul class="ul-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Savings</a></li>
+              <li><a class="active" href="#">Invest</a></li>
+              <li><a href="#">Account</a></li>
+              <a class="logout-a" href="#">Logout</a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main-body-container">
+        <div class="inner-main-body-container">
+          <div class="left-main-body-content">
+            <!-- <div class="inner-left-top-main-body-content">
+              <div class="inner-left-top-box">
+                <div class="Withdraw-btn">
+                  <a href="#">Withdraw</a>
+                </div>
+                <div class="deposit-btn">
+                  <a href="#">Deposit</a>
+                </div>
+              </div>
+              <div class="left-bottom-circle-btn"></div>
+            </div> -->
+            <!-- <div class="inner-left-bottom-main-body-content">
+              <div class="inner-right-top-box">
+                <h2>Transactions</h2>
+              </div>
+              <div class="inner-right-bottom-box">
+                <h3>Interest:<span id="totalinterestrate">0</span></h3>
+                <p id="interest"></p>
+              </div>
+              <div class="inner-right-bottom-box">
+                <h3>Total:<span id="totalinterest">0</span></h3>
+                <p id="interest"></p>
+              </div> -->
+            <div class="body-image">
+              <img src="/static/img/body.svg" alt="invest">
+            </div>
+          </div>
+          <div class="right-main-body-content">
+            <h2>Investment Calculator</h2>
+            <p>
+              The Investment can be used to calculate a specific parameter for
+              an investment plan. The tabs represent the desired parameter to be
+              found. For example, to calculate the return rate needed to reach
+              an investment goal width particular inputs, click the 'calculate'
+              tab.
+            </p>
+          
+            <div class="container">
+              <form id="myform" name="myform">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Saving Amount</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="amount" name="namount" placeholder="Saving Amount" onkeyup="calculateTotal()">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Period (month(s))</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="period" name="period" placeholder="Period" onkeyup="calculateTotal()">
+                    <input type="number" id="lname" name="lastname" placeholder="Number of Months">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Rate(%)</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="rate" name="rate" value="10" disabled onkeyup="calculateTotal()">
+                  </div>
+                </div>
+
+                <!-- C A L C U L A T I O N   R E S U L T S -->
+                <div class="inner-right-bottom-box">
+                  <h3>Interest:<span id="totalinterestrate">0</span></h3>
+                  <p id="interest"></p>
+                </div>
+                <div class="inner-right-bottom-box">
+                  <h3>Total:<span id="totalinterest">0</span></h3>
+                  <p id="interest"></p>
+                </div>
+                <!-- <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Interest</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="interest" name="lastname" placeholder="Interest = " disabled>
+                  </div>
+                </div> -->
+                <br>
+                <div class="row">
+                  <input type="button" value="Calculate" id="btn">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="inner-footer">
+          <div class="footer-left-content">
+            <img src="/static/img/logo.png" alt="" />
+            <p>
+              PiggyVest (formerly piggybank.ng) is the largest online savings &
+              investing platform in Nigeria. For over 4 years, our customers have saved and invested
+              billions of Naira that they would normally be tempted to spend.
+            </p>
+            <p>
+              Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali
+              Ayorinde Street, Victoria Island, Lagos.
+            </p>
+            <p>
+              0700 933 933 933 (Mon-Fri from 9am-5pm) - contact@piggyvest.com
+            </p>
+            <p>
+              2016 - 2020 PiggyTech Global Limited - RC 1405222
+            </p>
+          </div>
+          <div class="footer-right-content">
+            <div class="footer-link-box footer-link-box-1">
+              <h2>Quicklinks</h2>
+              <li><a href="">AutoSave</a></li>
+              <li><a href="">PiggyLink</a></li>
+              <li><a href="">Quick Save</a></li>
+              <li><a href="">SafeLock</a></li>
+              <li><a href="">Withdraw & Breaking</a></li>
+              <li><a href="">Salary Management</a></li>
+            </div>
+            <div class="footer-link-box footer-link-box-2">
+              <h2>Company</h2>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">SafeLock</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <div class="footer-icons">
+                <a href="#"><img src="/static/img/fb.png" alt="" /></a>
+                <a href="#"><img src="/static/img/tw.png" alt="" /></a>
+                <a href="#"><img src="/static/img/ig.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/static/script.js"></script>
+</html>

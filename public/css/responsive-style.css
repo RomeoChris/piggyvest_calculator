@@ -1,0 +1,133 @@
+/* mobile view */
+@media only screen and (max-device-width: 480px) {
+    main {
+      max-width: 360px;
+      overflow-x: hidden;
+      margin: 0 auto;
+    }
+    .header-wrapper {
+      width: 100%;
+      overflow-x: hidden;
+      height: auto;
+    }
+
+    .body-image img{
+      width: 320px;
+      height: 200px;
+    }
+    
+    .left-main-body-content {
+      max-width: 100%;
+      height: 220px;
+      margin: 10px;
+    }
+    
+    
+    .inner-header-wrapper .nav-bar {
+      
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      overflow-y: hidden;
+      /* height: 100px; */
+    }
+    /* .header-wrapper ul {
+      display:;
+    } */
+    .inner-main-body-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+    .inner-main-body-container .inner-left-top-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right-main-body-content {
+      width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    .right-main-body-content p{
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        text-align: justify;
+    }
+    /* Style the submit button */
+    input[type=button] {
+    background-color: #235dc3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+
+    .inner-footer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .footer-left-content img{
+        align-items: center;
+      }
+    .footer-left-content p{
+      width: 90%;
+      text-align: justify;
+      font-size: 15px;
+      padding-right: 23%;
+    }
+    .footer-right-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+    .footer-link-box {
+        width: 100%;
+        height: 300px;
+        margin-left: 10px;
+    }
+    
+    .footer-link-box h2 {
+        font-size: 22px;
+        color: #ffffff !important;
+    }
+    
+    .footer-link-box li {
+        list-style: none;
+    }
+    .footer-link-box li a {
+        color: #ffffff !important;
+        font-size: 15px;
+        line-height: 2.0;
+    }
+    
+    .footer-icons img {
+        margin: 5px;
+        width: 25px;
+    }
+    .footer-right-content{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        background-color: #235dc3;
+    }
+    .footer-link-box-1{
+        text-align: center;
+        width: 100%;
+        padding-right: 5%;
+    }
+    .footer-link-box-2{
+        text-align: center;
+        width: 100%;
+        padding-right: 5%;
+    }
+  }
+  

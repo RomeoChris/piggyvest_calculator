@@ -1,2 +1,2 @@
 # piggyvest_calculator
-Simple jnterest calculator for piggyvest
+Simple interest calculator for piggyvest
